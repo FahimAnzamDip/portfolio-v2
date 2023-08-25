@@ -1,5 +1,4 @@
 <script setup>
-
 import Hero from "@/sections/Hero.vue";
 import AboutMe from "@/sections/AboutMe.vue";
 </script>
