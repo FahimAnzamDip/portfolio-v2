@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --force",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.16",
+    "vue": "^3.3.4",
+    "vue3-smooth-scroll": "^0.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
+  }
+}
