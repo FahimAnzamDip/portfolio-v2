@@ -14,8 +14,8 @@ export default {
         'paragraph': ['Libre Baskerville', 'serif']
       },
       colors: {
-        'primary': colors.sky,
-        'secondary': colors.purple,
+        'primary': colors.indigo,
+        'secondary': colors.amber,
         'dark': '#0F172A'
       }
     },

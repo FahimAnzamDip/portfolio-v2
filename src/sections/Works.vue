@@ -2,6 +2,10 @@
 import SectionHeading from "@/components/SectionHeading.vue";
 import Project from "@/components/Project.vue";
 import NButton from "@/components/NButton.vue";
+import { ref } from "vue";
+import HireMe from "@/sections/HireMe.vue";
+
+let showAllWork = ref(false)
 </script>
 
 <template>
@@ -11,7 +15,21 @@ import NButton from "@/components/NButton.vue";
       <SectionHeading>My Works</SectionHeading>
 
       <div class="relative">
-        <div class="grid grid-cols-1 gap-16 md:gap-24">
+        <div :class="showAllWork ? '' : 'h-[2100px] overflow-y-hidden md:h-[1500px]'" class="grid grid-cols-1 gap-16 md:gap-24">
+          <Project
+              image="/project_1.jpg"
+              category="Open Source"
+              title="Triangle POS & Inventory"
+              :tags="['Bootstrap', 'Laravel', 'Livewire']"
+              code-link="#"
+              live-link="#"
+          >
+            <template #description>
+              <p>Triangle POS is an open source Inventory Management with POS System. Developed with Laravel 10, Bootstrap
+                4 & Livewire 2.0.</p>
+            </template>
+          </Project>
+
           <Project
               image="/project_1.jpg"
               category="Open Source"
@@ -55,8 +73,8 @@ import NButton from "@/components/NButton.vue";
           </Project>
         </div>
 
-        <div class="absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t pt-72 pb-8 from-[#0B1120] false">
-          <NButton btn-type="filled" class="px-5 py-3 text-lg font-normal tracking-wide" type="button">
+        <div :class="showAllWork ? 'hidden' : 'block'" class="absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t pt-72 pb-8 from-[#0B1120]">
+          <NButton @click="showAllWork = !showAllWork" btn-type="filled" class="px-4 py-2 text-lg font-normal tracking-wide" type="button">
             <span>See More</span>
             <template #icon>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -66,6 +84,8 @@ import NButton from "@/components/NButton.vue";
           </NButton>
         </div>
       </div>
+
+      <HireMe/>
     </div>
   </section>
   <!-- Works -->
