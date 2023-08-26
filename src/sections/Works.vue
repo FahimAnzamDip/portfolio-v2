@@ -17,7 +17,7 @@ let showAllWork = ref(false)
       <div class="relative">
         <div :class="showAllWork ? '' : 'h-[2100px] overflow-y-hidden md:h-[1500px]'" class="grid grid-cols-1 gap-16 md:gap-24">
           <Project
-              image="/project_1.jpg"
+              image="project_1.jpg"
               category="Open Source"
               title="Triangle POS & Inventory"
               :tags="['Bootstrap', 'Laravel', 'Livewire']"
@@ -31,7 +31,7 @@ let showAllWork = ref(false)
           </Project>
 
           <Project
-              image="/project_1.jpg"
+              image="project_1.jpg"
               category="Open Source"
               title="Triangle POS & Inventory"
               :tags="['Bootstrap', 'Laravel', 'Livewire']"
@@ -45,7 +45,7 @@ let showAllWork = ref(false)
           </Project>
 
           <Project
-              image="/project_1.jpg"
+              image="project_1.jpg"
               category="Open Source"
               title="Triangle POS & Inventory"
               :tags="['Bootstrap', 'Laravel', 'Livewire']"
@@ -59,7 +59,7 @@ let showAllWork = ref(false)
           </Project>
 
           <Project
-              image="/project_1.jpg"
+              image="project_1.jpg"
               category="Open Source"
               title="Triangle POS & Inventory"
               :tags="['Bootstrap', 'Laravel', 'Livewire']"

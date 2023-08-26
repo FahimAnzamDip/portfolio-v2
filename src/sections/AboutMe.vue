@@ -80,17 +80,17 @@
             </div>
             <div v-show="currentTab === 2" class="text-slate-200">
               <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                <Skill link="#" name="Bootstrap" image="/bootstrap.jpg"/>
-                <Skill link="#" name="Tailwind CSS" image="/tailwind.jpg"/>
-                <Skill link="#" name="Php" image="/php.jpg"/>
-                <Skill link="#" name="Laravel" image="/laravel.jpg"/>
-                <Skill link="#" name="Javascript" image="/javascript.jpg"/>
-                <Skill link="#" name="Vue.js" image="/vue.jpg"/>
-                <Skill link="#" name="Alpine.js" image="/alpine.jpg"/>
-                <Skill link="#" name="Livewire" image="/livewire.jpg"/>
-                <Skill link="#" name="Github" image="/github.jpg"/>
-                <Skill link="#" name="MySQL" image="/sql.jpg"/>
-                <Skill link="#" name="PostgreSQL" image="/pgsql.jpg"/>
+                <Skill link="#" name="Bootstrap" image="bootstrap.jpg"/>
+                <Skill link="#" name="Tailwind CSS" image="tailwind.jpg"/>
+                <Skill link="#" name="Php" image="php.jpg"/>
+                <Skill link="#" name="Laravel" image="laravel.jpg"/>
+                <Skill link="#" name="Javascript" image="javascript.jpg"/>
+                <Skill link="#" name="Vue.js" image="vue.jpg"/>
+                <Skill link="#" name="Alpine.js" image="alpine.jpg"/>
+                <Skill link="#" name="Livewire" image="livewire.jpg"/>
+                <Skill link="#" name="Github" image="github.jpg"/>
+                <Skill link="#" name="MySQL" image="sql.jpg"/>
+                <Skill link="#" name="PostgreSQL" image="pgsql.jpg"/>
               </div>
             </div>
             <div v-show="currentTab === 3" class="text-slate-200 tracking-wide">
