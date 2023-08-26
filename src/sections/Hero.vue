@@ -26,12 +26,12 @@ onBeforeUnmount(() => {
 
 <template>
   <!-- Hero -->
-  <section id="hero" class="relative min-h-[calc(100vh-85px)] overflow-x-clip bg-[#0B1120] bg-hero-pattern">
+  <section id="home" class="relative min-h-[calc(100vh-85px)] overflow-x-clip bg-[#0B1120] bg-hero-pattern">
     <div class="absolute right-[28%] top-0 h-[150px] w-[200px] rotate-12 rounded-3xl bg-gradient-to-l from-teal-600 to-teal-400 blur-3xl filter block opacity-10 lg:top-44 lg:-right-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[500px]"></div>
     <div class="absolute bottom-44 -left-64 h-[150px] w-[900px] -rotate-45 rounded-3xl bg-gradient-to-r from-violet-600 to-indigo-800 opacity-30 blur-3xl filter block lg:bottom-24 lg:-left-20 lg:h-28 lg:w-[250px] lg:-rotate-12 lg:opacity-20 xl:h-40 xl:w-[400px]"></div>
     <div class="absolute left-[28%] top-28 hidden rotate-12 rounded-3xl bg-sky-800 blur-3xl filter opacity-30 lg:h-32 lg:w-[450px] lg:block xl:h-44 xl:w-[600px]"></div>
 
-    <div class="container mx-auto px-3 flex flex-col justify-center items-center min-h-[calc(100vh-85px)] max-w-7xl">
+    <div class="container mx-auto px-3 flex flex-col justify-center items-center min-h-[calc(100vh-85px)] max-w-6xl 2xl:max-w-7xl">
       <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold font-heading text-slate-100 mb-5 text-center">I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400">Fahim Anzam</span></h1>
       <h2 class="text-4xl md:text-6xl font-semibold font-heading text-slate-100 text-center">Web <span ref="typedElement"></span></h2>
 

@@ -7,14 +7,14 @@ let mobileNav = ref(true);
 
 <template>
   <header class="py-5 md:py-7 sticky top-0 z-40 shadow backdrop-blur-xl transition-colors duration-500 bg-[#0B1120]/80">
-    <nav class="flex items-center justify-between container mx-auto px-3 max-w-7xl">
+    <nav class="flex items-center justify-between container mx-auto px-3 max-w-6xl 2xl:max-w-7xl">
       <a href="/">
         <img class="w-[180px] md:w-[220px]" src="/logo.png" alt="Web Developer / Designer">
       </a>
       <div class="custom-nav hidden md:block">
-        <ul class="flex space-x-12">
+        <ul v-scroll-spy-active="{selector: 'li a.menu-link', class: 'active-link'}" class="flex space-x-12">
           <li>
-            <NavLink :link="'#home'" :class="'active-link'">Home</NavLink>
+            <NavLink :link="'#home'">Home</NavLink>
           </li>
           <li>
             <NavLink :link="'#about'">About</NavLink>

@@ -2,17 +2,17 @@
   import { ref } from "vue";
   import Skill from "@/components/Skill.vue";
   import AboutTab from "@/components/AboutTab.vue";
+  import SectionHeading from "@/components/SectionHeading.vue";
 
   let currentTab = ref(1)
 </script>
 
 <template>
   <!-- About -->
-  <section id="about" class="relative py-28">
-    <div class="container px-3 mx-auto max-w-7xl">
-      <div class="text-center mb-24 flex justify-center">
-        <h2 id="section-heading" class="relative text-4xl md:text-5xl text-white font-semibold tracking-wide after:content-[''] after:absolute after:left-0 after:-bottom-4 after:w-[40%] after:h-[4px] after:bg-primary-400">About Me</h2>
-      </div>
+  <section id="about" class="relative py-28 lg:py-36 lg:py-36">
+    <div class="container px-3 mx-auto max-w-6xl 2xl:max-w-7xl">
+      <SectionHeading>About Me</SectionHeading>
+
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
         <div class="md:col-span-5 flex justify-center items-start">
           <div class="relative">
@@ -95,9 +95,9 @@
             </div>
             <div v-show="currentTab === 3" class="text-slate-200 tracking-wide">
               <div class="bg-gray-800 p-8 rounded-lg shadow-md space-y-6">
-                <h3 class="text-xl">Web Developer - Haste IT</h3>
+                <h3 class="text-xl">Web Developer <span class="text-primary-300 font-medium">@ Haste IT</span></h3>
                 <div class="bg-primary-400/10 text-primary-300 px-4 py-2 rounded-full text-sm w-fit">
-                  February 2022 - Running
+                  February 2022 - Present
                 </div>
                 <div class="prose prose-invert">
                   <ul>
