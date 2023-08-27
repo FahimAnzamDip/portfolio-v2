@@ -8,10 +8,10 @@ let typed
 
 onMounted(() => {
   typed = new Typed(typedElement.value, {
-    strings: ['Developer', 'Designer'],
+    strings: ['Full Stack Web Developer', 'Crafting Digital Experiences'],
     typeSpeed: 50,
     backSpeed: 30,
-    backDelay:3000,
+    backDelay: 5000,
     loop: true,
     cursorChar: '_',
   });
@@ -32,25 +32,69 @@ onBeforeUnmount(() => {
     <div class="absolute left-[28%] top-28 hidden rotate-12 rounded-3xl bg-sky-800 blur-3xl filter opacity-30 lg:h-32 lg:w-[450px] lg:block xl:h-44 xl:w-[600px]"></div>
 
     <div class="container mx-auto px-3 flex flex-col justify-center items-center min-h-[calc(100vh-85px)] max-w-6xl 2xl:max-w-7xl">
-      <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold font-heading text-slate-100 mb-5 text-center">I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400">Fahim Anzam</span></h1>
-      <h2 class="text-4xl md:text-6xl font-semibold font-heading text-slate-100 text-center">Web <span ref="typedElement"></span></h2>
+      <h1 v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :enter="{
+            opacity: 1,
+            transition: {
+              duration: 500,
+              delay: 700
+            }
+          }"
+          class="text-4xl md:text-6xl lg:text-8xl font-bold font-heading text-slate-100 mb-5 text-center">I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400">Fahim Anzam</span></h1>
+      <h2 v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :enter="{
+            opacity: 1,
+            transition: {
+              duration: 500,
+              delay: 900
+            }
+          }"
+          class="text-2xl md:text-5xl font-semibold font-heading text-slate-100 text-center"><span ref="typedElement"></span></h2>
 
-      <div class="flex justify-center mt-10 md:mt-16 space-x-6">
-        <a href="#" target="_blank" class="group flex items-center space-x-3">
-          <img class="w-[1.5rem] md:w-[1.7rem]" src="/github.png" alt="Fahim's Github">
+      <div v-motion
+           :initial="{
+            opacity: 0,
+          }"
+           :enter="{
+            opacity: 1,
+            transition: {
+              duration: 500,
+              delay: 1100
+            }
+          }"
+          class="flex justify-center mt-10 md:mt-16 space-x-6 text-slate-300">
+        <a href="https://github.com/FahimAnzamDip" target="_blank" class="group flex items-center space-x-3">
+          <img class="w-[1.5rem] md:w-[1.7rem]" src="/images/github.png" alt="Fahim's Github">
           <span class="text-lg group-hover:text-white font-medium transition-all duration-300">Github</span>
         </a>
-        <a href="#" target="_blank" class="group flex items-center space-x-3">
-          <img class="w-[1.5rem] md:w-[1.7rem]" src="/linkedin.png" alt="Fahim's Linkedin">
+        <a href="https://www.linkedin.com/in/fahim-anzam-dip/" target="_blank" class="group flex items-center space-x-3">
+          <img class="w-[1.5rem] md:w-[1.7rem]" src="/images/linkedin.png" alt="Fahim's Linkedin">
           <span class="text-lg group-hover:text-white font-medium transition-all duration-300">Linkedin</span>
         </a>
       </div>
 
-      <div class="flex flex-col md:flex-row justify-center items-center mt-10 md:mt-16 space-y-4 md:space-x-7 md:space-y-0 w-full">
-        <LinkButton v-smooth-scroll link="#about" class="text-md md:text-xl px-5 py-3 md:px-7 md:py-4">
+      <div v-motion
+           :initial="{
+            opacity: 0,
+          }"
+           :enter="{
+            opacity: 1,
+            transition: {
+              duration: 500,
+              delay: 1300
+            }
+          }"
+          class="flex flex-col md:flex-row justify-center items-center mt-10 md:mt-16 space-y-4 md:space-x-7 md:space-y-0 w-full">
+        <LinkButton link="#about" class="text-md md:text-xl px-5 py-3 md:px-7 md:py-4">
           About Me
         </LinkButton>
-        <LinkButton v-smooth-scroll btn-type="filled" link="#works" class="text-md md:text-xl px-5 py-3 md:px-7 md:py-4">
+        <LinkButton btn-type="filled" link="#works" class="text-md md:text-xl px-5 py-3 md:px-7 md:py-4">
           <span>See My Works</span>
           <template #icon>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:h-6 md:w-6">
@@ -63,3 +107,7 @@ onBeforeUnmount(() => {
   </section>
   <!-- Hero -->
 </template>
+
+<style scoped>
+
+</style>

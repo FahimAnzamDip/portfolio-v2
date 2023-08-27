@@ -19,7 +19,7 @@
         grid-area: 1 / 6 / -1 / -1 !important;
     }
 
-    .single-project:nth-of-type(2n+2) .title, .single-project:nth-of-type(2n+2) .subtitle, .single-project:nth-of-type(2n+2) .description {
+    .single-project:nth-of-type(2n+2) .title, .single-project:nth-of-type(2n+2) .subtitle {
         @apply text-right !important
     }
 

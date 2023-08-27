@@ -3,27 +3,29 @@
   import Skill from "@/components/Skill.vue";
   import AboutTab from "@/components/AboutTab.vue";
   import SectionHeading from "@/components/SectionHeading.vue";
+  import Experience from "@/components/Experience.vue";
+  import Education from "@/components/Education.vue";
 
   let currentTab = ref(1)
 </script>
 
 <template>
   <!-- About -->
-  <section id="about" class="relative py-28 lg:py-36 lg:py-36">
+  <section id="about" class="relative py-28 lg:py-36">
     <div class="container px-3 mx-auto max-w-6xl 2xl:max-w-7xl">
       <SectionHeading>About Me</SectionHeading>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
         <div class="md:col-span-5 flex justify-center items-start">
           <div class="relative">
-            <img class="w-full rounded-lg md:w-[400px] border-8 border-white h-auto" src="/fahim.png" alt="Fahim Anzam Dip">
-            <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 border-white rounded-lg -z-10 bottom-5 right-6 hidden md:block"></div>
+            <img class="w-full rounded-lg md:w-[400px] border-8 border-white h-auto" src="/images/fahim.png" alt="Fahim Anzam Dip">
+            <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block"></div>
           </div>
         </div>
 
         <div class="md:col-span-7">
           <div class="tabs mb-10 border-b border-slate-800 pb-5">
-            <ul class="grid grid-cols-2 justify-center md:justify-start gap-y-6 md:flex md:space-x-6 md:gap-y-0 font-medium">
+            <ul class="grid grid-cols-2 justify-center md:justify-start gap-y-6 md:flex md:flex-wrap md:space-x-6 md:gap-y-0 font-medium">
               <li>
                 <AboutTab @click="currentTab = 1" :class="currentTab === 1 ? 'bg-slate-800 text-white' : ''">
                   <template #icon>
@@ -41,7 +43,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
                     </svg>
                   </template>
-                  Skills
+                  <span>Skills</span>
                 </AboutTab>
               </li>
               <li>
@@ -49,7 +51,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-primary-300 mr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
                   </svg>
-                  Experience
+                  <span>Experience</span>
                 </AboutTab>
               </li>
               <li>
@@ -64,74 +66,66 @@
           </div>
 
           <div class="contents">
-            <div v-show="currentTab === 1" class="text-slate-200 tracking-wide">
-              <div class="prose prose-invert prose-teal tracking-wide mb-7 text-left md:text-justify">
-                <p>Hi, This is <strong>Fahim Anzam Dip</strong></p>
-                <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. For the past <strong>two & a half years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
-                <p>I am always open to learning new technologies and build new things that will shape the business of my clients.</p>
-              </div>
+            <transition name="fade" mode="out-in">
+              <div v-if="currentTab === 1" class="text-slate-200 tracking-wide">
+                <div class="prose prose-invert prose-teal tracking-wide mb-7 text-left md:text-justify">
+                  <p>Hi, This is <strong>Fahim Anzam Dip</strong></p>
+                  <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. For the past <strong>two & a half years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
+                  <p>I am always open to learning new technologies and build new things that will shape the business of my clients.</p>
+                </div>
 
-              <a href="#" class="text-primary-400 hover:text-primary-300 font-medium flex items-center justify-start w-fit transition-all duration-300">
-                <span class="mr-2">View my resume</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                </svg>
-              </a>
-            </div>
-            <div v-show="currentTab === 2" class="text-slate-200">
-              <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                <Skill link="#" name="Bootstrap" image="bootstrap.jpg"/>
-                <Skill link="#" name="Tailwind CSS" image="tailwind.jpg"/>
-                <Skill link="#" name="Php" image="php.jpg"/>
-                <Skill link="#" name="Laravel" image="laravel.jpg"/>
-                <Skill link="#" name="Javascript" image="javascript.jpg"/>
-                <Skill link="#" name="Vue.js" image="vue.jpg"/>
-                <Skill link="#" name="Alpine.js" image="alpine.jpg"/>
-                <Skill link="#" name="Livewire" image="livewire.jpg"/>
-                <Skill link="#" name="Github" image="github.jpg"/>
-                <Skill link="#" name="MySQL" image="sql.jpg"/>
-                <Skill link="#" name="PostgreSQL" image="pgsql.jpg"/>
+                <a href="https://drive.google.com/file/d/1jwDufcvVwwc_uM-mVdxMzVl27mZP79ch/view?usp=sharing" target="_blank" class="text-primary-400 hover:text-primary-300 font-medium flex items-center justify-start w-fit transition-all duration-300">
+                  <span class="mr-2">My Resume</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                </a>
               </div>
-            </div>
-            <div v-show="currentTab === 3" class="text-slate-200 tracking-wide">
-              <div class="bg-gray-800 p-8 rounded-lg shadow-md space-y-6">
-                <h3 class="text-xl">Web Developer <span class="text-primary-300 font-medium">@ Haste IT</span></h3>
-                <div class="bg-primary-400/10 text-primary-300 px-4 py-2 rounded-full text-sm w-fit">
-                  February 2022 - Present
-                </div>
-                <div class="prose prose-invert">
-                  <ul>
-                    <li>Develop web applications using Laravel, Go & Vue.js</li>
-                    <li>Consult with client for feature requests</li>
-                    <li>Maintain and fix bugs on old applications</li>
-                  </ul>
+              <div v-else-if="currentTab === 2" class="text-slate-200">
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                  <Skill link="#" name="Bootstrap" image="images/bootstrap.jpg"/>
+                  <Skill link="#" name="Tailwind CSS" image="images/tailwind.jpg"/>
+                  <Skill link="#" name="Php" image="images/php.jpg"/>
+                  <Skill link="#" name="Laravel" image="images/laravel.jpg"/>
+                  <Skill link="#" name="Javascript" image="images/javascript.jpg"/>
+                  <Skill link="#" name="Vue.js" image="images/vue.jpg"/>
+                  <Skill link="#" name="Alpine.js" image="images/alpine.jpg"/>
+                  <Skill link="#" name="Livewire" image="images/livewire.jpg"/>
+                  <Skill link="#" name="Github" image="images/github.jpg"/>
+                  <Skill link="#" name="MySQL" image="images/sql.jpg"/>
+                  <Skill link="#" name="PostgreSQL" image="images/pgsql.jpg"/>
                 </div>
               </div>
-            </div>
-            <div v-show="currentTab === 4" class="text-slate-200 tracking-wide space-y-5">
-              <div class="bg-gray-800 p-8 rounded-lg shadow-md space-y-6">
-                <div>
-                  <h3 class="text-xl mb-1">BSc in Computer Science & Engineering</h3>
-                  <h5 class="text-md text-slate-300 transition-all duration-300 hover:text-primary-300">
-                    <a target="_blank" href="https://green.edu.bd/">Green University of Bangladesh</a>
-                  </h5>
-                </div>
-                <div class="bg-primary-400/10 text-primary-300 px-4 py-2 rounded-full text-sm w-fit">
-                  February 2022 - Expected 2026
-                </div>
+              <div v-else-if="currentTab === 3" class="text-slate-200 tracking-wide">
+                <Experience
+                  designation="Web Developer"
+                  company="Haste IT"
+                  timeline="February 2022 - Present"
+                >
+                  <template #description>
+                    <ul>
+                      <li>Develop web applications using Laravel, Go & Vue.js</li>
+                      <li>Consult with client for feature requests</li>
+                      <li>Maintain and fix bugs on old applications</li>
+                    </ul>
+                  </template>
+                </Experience>
               </div>
-              <div class="bg-gray-800 p-8 rounded-lg shadow-md space-y-6">
-                <div>
-                  <h3 class="text-xl mb-1">Diploma in Computer Technology</h3>
-                  <h5 class="text-md text-slate-300 transition-all duration-300 hover:text-primary-300">
-                    <a target="_blank" href="https://www.tpi.gov.bd/">Tangail Polytechnic Institute</a>
-                  </h5>
-                </div>
-                <div class="bg-primary-400/10 text-primary-300 px-4 py-2 rounded-full text-sm w-fit">
-                  August 2016 - December 2020
-                </div>
+              <div v-else-if="currentTab === 4" class="text-slate-200 tracking-wide space-y-5">
+                <Education
+                    degree="BSc in Computer Science & Engineering"
+                    institute="Green University of Bangladesh"
+                    timeline="February 2022 - Expected 2026"
+                    website="https://green.edu.bd/"
+                />
+                <Education
+                    degree="Diploma in Computer Technology"
+                    institute="Tangail Polytechnic Instituteh"
+                    timeline="August 2016 - December 2020"
+                    website="https://www.tpi.gov.bd/"
+                />
               </div>
-            </div>
+            </transition>
           </div>
         </div>
       </div>
@@ -139,3 +133,17 @@
   </section>
   <!-- About -->
 </template>
+
+<style scoped>
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 200ms;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(.6,.15,.35,.8);
+}
+</style>

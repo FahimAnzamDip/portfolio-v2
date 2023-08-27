@@ -8,13 +8,60 @@ import Contact from "@/sections/Contact.vue";
 <template>
   <!-- Main -->
   <main v-scroll-spy="{offset: 50}">
-    <Hero/>
+    <Hero
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :enter="{
+          opacity: 1,
+          transition: {
+            duration: 500
+          }
+        }"
+    />
 
-    <AboutMe/>
+    <AboutMe
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :visible="{
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 600
+          }
+        }"
+    />
 
-    <Works/>
+    <Works
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :visible="{
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 600
+          }
+        }"
+    />
 
-    <Contact/>
+    <Contact
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :visible="{
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 600
+          }
+        }"
+    />
   </main>
   <!-- Main -->
 </template>

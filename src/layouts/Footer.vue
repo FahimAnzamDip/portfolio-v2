@@ -1,11 +1,15 @@
 <script setup>
-  const year = new Date().getFullYear()
+import { useMobileNav } from "@/composables/mobile-nav";
+
+let { loadMobileNav } = useMobileNav()
+
+const year = new Date().getFullYear()
 </script>
 
 <template>
   <!-- Footer -->
-  <footer class="bg-[#0B1120]/80 py-6">
-    <p class="text-center">
+  <footer :class="loadMobileNav ? 'pb-20 pt-6' : 'py-6'" class="bg-[#0B1120]/80">
+    <p class="text-center text-sm md:text-base">
       {{ year }} &copy; Designed & Built by <a target="_blank" href="https://github.com/FahimAnzamDip" class="text-primary-300 font-medium hover:underline hover:underline-offset-4">Fahim Anzam Dip</a>
     </p>
   </footer>
