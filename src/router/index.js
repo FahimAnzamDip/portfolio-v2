@@ -20,7 +20,18 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: Main
+            component: Main,
+            children: [
+                {
+                    path: '',
+                    name: 'home',
+                    component: () => import('@/pages/HomePage.vue'),
+                },
+            ]
+        },
+        {
+            path: '/:catchAll(.*)*',
+            component: () => import('@/pages/ErrorNotFound.vue'),
         },
     ]
 })
