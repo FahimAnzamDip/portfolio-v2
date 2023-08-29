@@ -10,7 +10,7 @@ let showAllWork = ref(false)
 
 <template>
   <!-- Works -->
-  <section id="works" class="relative py-28 lg:py-36 bg-[#0B1120]">
+  <section id="works" class="relative py-28 lg:py-36 bg-slate-100 dark:bg-[#0B1120]">
     <div class="container px-3 mx-auto max-w-6xl 2xl:max-w-7xl">
       <SectionHeading>My Works</SectionHeading>
 
@@ -89,7 +89,7 @@ let showAllWork = ref(false)
           </Project>
         </div>
 
-        <div v-if="!showAllWork" class="absolute z-20 inset-x-0 bottom-0 flex justify-center bg-gradient-to-t pt-72 pb-8 from-[#0B1120]">
+        <div v-if="!showAllWork" class="absolute z-20 inset-x-0 bottom-0 flex justify-center bg-gradient-to-t pt-72 pb-8 from-slate-100 dark:from-[#0B1120]">
           <NButton @click="showAllWork = !showAllWork" btn-type="filled" class="px-4 py-2 text-lg font-normal tracking-wide" type="button">
             <span>See More</span>
             <template #icon>

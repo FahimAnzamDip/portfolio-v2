@@ -7,8 +7,8 @@ import LinkButton from "@/components/LinkButton.vue";
   <div class="h-screen w-100 flex justify-center items-center">
     <div class="flex flex-col items-center">
       <h1 class="text-8xl font-bold text-red-500 mb-5">404</h1>
-      <p class="text-2xl text-white">Requested Page Not Found !</p>
-      <LinkButton to="/" class="mt-10 px-5 py-3">
+      <p class="text-2xl dark:text-white">Requested Page Not Found !</p>
+      <LinkButton :to="{ name:'home' }" class="mt-10 px-5 py-3">
         <span>Go to Home</span>
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">

@@ -7,12 +7,8 @@ import Footer from "@/layouts/Footer.vue";
   <Header/>
 
   <!-- Main -->
-  <main v-scroll-spy="{offset: 50}">
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+  <main v-scroll-spy="{offset: 80}">
+    <router-view></router-view>
   </main>
   <!-- Main -->
 
@@ -20,15 +16,5 @@ import Footer from "@/layouts/Footer.vue";
 </template>
 
 <style scoped>
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 200ms;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(.6,.15,.35,.8);
-}
 </style>

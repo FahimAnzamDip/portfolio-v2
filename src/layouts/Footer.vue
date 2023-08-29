@@ -8,9 +8,9 @@ const year = new Date().getFullYear()
 
 <template>
   <!-- Footer -->
-  <footer :class="loadMobileNav ? 'pb-20 pt-6' : 'py-6'" class="bg-[#0B1120]/80">
+  <footer :class="loadMobileNav ? 'pb-20 pt-6' : 'py-6'" class="bg-slate-200/80 dark:bg-[#0B1120]/80">
     <p class="text-center text-sm md:text-base">
-      {{ year }} &copy; Designed & Built by <a target="_blank" href="https://github.com/FahimAnzamDip" class="text-primary-300 font-medium hover:underline hover:underline-offset-4">Fahim Anzam Dip</a>
+      {{ year }} &copy; Designed & Built by <a target="_blank" href="https://github.com/FahimAnzamDip" class="text-primary-600 dark:text-primary-300 font-medium hover:underline hover:underline-offset-4">Fahim Anzam Dip</a>
     </p>
   </footer>
   <!-- Footer -->

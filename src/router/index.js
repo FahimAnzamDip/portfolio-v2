@@ -19,7 +19,6 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            name: 'home',
             component: Main,
             children: [
                 {
@@ -31,6 +30,7 @@ const router = createRouter({
         },
         {
             path: '/:catchAll(.*)*',
+            name: 'not-found',
             component: () => import('@/pages/ErrorNotFound.vue'),
         },
     ]

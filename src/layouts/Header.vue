@@ -2,15 +2,18 @@
 import NavLink from "@/components/NavLink.vue";
 import { ref } from "vue";
 import { useMobileNav } from "@/composables/mobile-nav";
+import LinkButton from "@/components/LinkButton.vue";
+import DarkModeSwitch from "@/components/DarkModeSwitch.vue";
 
 let { mobileNav, loadMobileNav, toggleMobileNav } = useMobileNav()
 </script>
 
 <template>
-  <header class="py-5 md:py-7 sticky top-0 z-40 shadow backdrop-blur-xl transition-colors duration-500 bg-[#0B1120]/80">
+  <header class="py-5 md:py-7 sticky top-0 z-40 shadow backdrop-blur-2xl bg-slate-200/80 dark:bg-[#0B1120]/80">
     <nav class="flex items-center justify-between container mx-auto px-3 max-w-6xl 2xl:max-w-7xl">
-      <router-link to="/">
-        <img class="w-[160px] md:w-[220px]" src="/logo.png" alt="Web Developer / Designer">
+      <router-link :to="{ name:'home' }">
+        <img class="w-[170px] md:w-[220px] dark:inline-block hidden" src="/logo.png" alt="Web Developer / Designer">
+        <img class="w-[170px] md:w-[220px] dark:hidden inline-block" src="/logo-dark.png" alt="Web Developer / Designer">
       </router-link>
       <div class="custom-nav hidden md:block">
         <ul v-scroll-spy-active="{selector: 'li a.menu-link-1', class: 'active-link'}" class="flex space-x-12">
@@ -26,12 +29,16 @@ let { mobileNav, loadMobileNav, toggleMobileNav } = useMobileNav()
           <li>
             <NavLink :link="'#contact'">Contact</NavLink>
           </li>
+          <li>
+            <DarkModeSwitch/>
+          </li>
         </ul>
       </div>
 
       <div class="flex items-center md:hidden">
+        <DarkModeSwitch/>
         <button @click="toggleMobileNav()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-primary-400" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 fill-primary-500 dark:fill-primary-400 ml-5" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
         </button>
       </div>
     </nav>
@@ -41,8 +48,8 @@ let { mobileNav, loadMobileNav, toggleMobileNav } = useMobileNav()
   <!-- Mobile Nav -->
   <template v-if="loadMobileNav">
     <transition name="fade" mode="out-in">
-    <nav v-show="mobileNav.show" class="py-5 fixed bottom-0 left-0 right-0 bg-[#0B1120]/80 shadow backdrop-blur-xl z-40 block md:hidden">
-      <ul v-scroll-spy-active="{selector: 'li a.menu-link', class: 'text-primary-400'}" class="grid grid-cols-4 gap-6 px-5">
+    <nav v-show="mobileNav.show" class="py-5 fixed bottom-0 left-0 right-0 bg-slate-200/80 dark:bg-[#0B1120]/80 shadow backdrop-blur-2xl z-40 block md:hidden">
+      <ul v-scroll-spy-active="{selector: 'li a.menu-link', class: 'active-mobile-link'}" class="grid grid-cols-4 gap-6 px-5">
         <li  class="flex justify-center items-center">
           <router-link to="#home" class="menu-link">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
