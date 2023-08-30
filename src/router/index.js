@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/layouts/Main.vue";
 
 const router = createRouter({
@@ -6,34 +6,34 @@ const router = createRouter({
         if (to.hash) {
             return {
                 el: to.hash,
-                behavior: 'smooth',
-            }
+                behavior: "smooth",
+            };
         } else {
             return {
                 top: 0,
-                behavior: 'smooth',
-            }
+                behavior: "smooth",
+            };
         }
     },
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: '/',
+            path: "/",
             component: Main,
             children: [
                 {
-                    path: '',
-                    name: 'home',
-                    component: () => import('@/pages/HomePage.vue'),
+                    path: "",
+                    name: "home",
+                    component: () => import("@/pages/HomePage.vue"),
                 },
-            ]
+            ],
         },
         {
-            path: '/:catchAll(.*)*',
-            name: 'not-found',
-            component: () => import('@/pages/ErrorNotFound.vue'),
+            path: "/:catchAll(.*)*",
+            name: "not-found",
+            component: () => import("@/pages/ErrorNotFound.vue"),
         },
-    ]
-})
+    ],
+});
 
-export default router
+export default router;

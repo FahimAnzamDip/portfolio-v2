@@ -1,19 +1,19 @@
-import {reactive, ref} from "vue";
+import { reactive, ref } from "vue";
 
 export function useMobileNav() {
-    let loadMobileNav
+    let loadMobileNav;
 
     if (window.innerWidth < 640) {
-        loadMobileNav = ref(true)
+        loadMobileNav = ref(true);
     } else {
-        loadMobileNav = ref(false)
+        loadMobileNav = ref(false);
     }
 
     let mobileNav = reactive({
-        show: true
-    })
+        show: true,
+    });
 
-    let toggleMobileNav = () => mobileNav.show = !mobileNav.show
+    let toggleMobileNav = () => (mobileNav.show = !mobileNav.show);
 
-    return { mobileNav, loadMobileNav, toggleMobileNav }
+    return { mobileNav, loadMobileNav, toggleMobileNav };
 }

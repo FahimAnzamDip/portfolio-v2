@@ -4,17 +4,15 @@ import Footer from "@/layouts/Footer.vue";
 </script>
 
 <template>
-  <Header/>
+    <Header />
 
-  <!-- Main -->
-  <main v-scroll-spy="{offset: 80}">
-    <router-view></router-view>
-  </main>
-  <!-- Main -->
+    <!-- Main -->
+    <main v-scroll-spy="{ offset: 80 }">
+        <router-view></router-view>
+    </main>
+    <!-- Main -->
 
-  <Footer/>
+    <Footer />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

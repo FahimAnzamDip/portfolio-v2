@@ -4,22 +4,22 @@
 
 /** HEADER **/
 .active-link {
-    @apply dark:text-white text-gray-900 !important
+    @apply dark:text-white text-gray-900 !important;
 }
 
 .active-link:after {
-    @apply content-[''] absolute left-0 bottom-0 w-[25px]  h-[2px] dark:bg-primary-400 bg-primary-600 !important
+    @apply content-[''] absolute left-0 bottom-0 w-[25px]  h-[2px] dark:bg-primary-400 bg-primary-600 !important;
 }
 
 .active-mobile-link {
-    @apply text-primary-600 dark:text-primary-400
+    @apply text-primary-600 dark:text-primary-400;
 }
 
 /** HEADER **/
 
 /** WORKS **/
-@media(min-width: 576px) {
-    .single-project:nth-of-type(2n+2) .project-content {
+@media (min-width: 576px) {
+    .single-project:nth-of-type(2n + 2) .project-content {
         grid-column: 7 / -1 !important;
     }
 
@@ -27,7 +27,7 @@
         grid-area: 1 / 1 / -1 / 7 !important;
     }
 
-    .single-project:nth-of-type(2n+2) .project-image {
+    .single-project:nth-of-type(2n + 2) .project-image {
         grid-column: 1 / 8 !important;
     }
 
@@ -35,13 +35,14 @@
         grid-area: 1 / 6 / -1 / -1 !important;
     }
 
-    .single-project:nth-of-type(2n+2) .title, .single-project:nth-of-type(2n+2) .subtitle {
-        @apply text-right !important
+    .single-project:nth-of-type(2n + 2) .title,
+    .single-project:nth-of-type(2n + 2) .subtitle {
+        @apply text-right !important;
     }
 
-
-    .single-project:nth-of-type(2n+2) .tags, .single-project:nth-of-type(2n+2) .links {
-        @apply justify-end !important
+    .single-project:nth-of-type(2n + 2) .tags,
+    .single-project:nth-of-type(2n + 2) .links {
+        @apply justify-end !important;
     }
 }
 /** WORKS **/
@@ -58,30 +59,30 @@
 
 /** SCROLL BAR **/
 ::-webkit-scrollbar {
-    @apply w-2
+    @apply w-2;
 }
 
 ::-webkit-scrollbar-track {
-    @apply bg-slate-300
+    @apply bg-slate-300;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply bg-slate-400 rounded-xl
+    @apply bg-slate-400 rounded-xl;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-500
+    @apply bg-slate-500;
 }
 
 .dark ::-webkit-scrollbar-track {
-    @apply bg-slate-800
+    @apply bg-slate-800;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    @apply bg-slate-600 rounded-xl
+    @apply bg-slate-600 rounded-xl;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-500
+    @apply bg-slate-500;
 }
 /** SCROLL BAR **/
