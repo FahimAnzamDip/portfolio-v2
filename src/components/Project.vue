@@ -12,7 +12,7 @@
     <div class="col-span-12 project-content z-10">
       <h3 class="subtitle text-primary-600 dark:text-primary-300 mb-2">{{ category }}</h3>
       <h4 class="title text-3xl font-semibold mb-6 dark:tracking-wide">{{ title }}</h4>
-      <div class="description bg-gray-200/70 dark:bg-slate-800/70 backdrop-blur-sm p-4 shadow-md rounded-lg prose dark:prose-invert prose-primary mb-4">
+      <div class="description bg-gray-200/70 dark:bg-slate-800/70 backdrop-blur-lg px-5 py-1 shadow-md rounded-lg prose dark:prose-invert prose-primary mb-4">
         <slot name="description"></slot>
       </div>
       <div class="tags flex flex-wrap gap-3 mb-6">

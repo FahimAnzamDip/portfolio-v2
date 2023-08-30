@@ -1,0 +1,70 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "link": "#",
+            "name": "Bootstrap",
+            "image": "images/bootstrap.jpg"
+        },
+        {
+            "id": 2,
+            "link": "#",
+            "name": "Tailwind CSS",
+            "image": "images/tailwind.jpg"
+        },
+        {
+            "id": 3,
+            "link": "#",
+            "name": "Php",
+            "image": "images/php.jpg"
+        },
+        {
+            "id": 4,
+            "link": "#",
+            "name": "Laravel",
+            "image": "images/laravel.jpg"
+        },
+        {
+            "id": 5,
+            "link": "#",
+            "name": "Javascript",
+            "image": "images/javascript.jpg"
+        },
+        {
+            "id": 6,
+            "link": "#",
+            "name": "Vue.js",
+            "image": "images/vue.jpg"
+        },
+        {
+            "id": 7,
+            "link": "#",
+            "name": "Alpine.js",
+            "image": "images/alpine.jpg"
+        },
+        {
+            "id": 8,
+            "link": "#",
+            "name": "Livewire",
+            "image": "images/livewire.jpg"
+        },
+        {
+            "id": 9,
+            "link": "#",
+            "name": "Github",
+            "image": "images/github.jpg"
+        },
+        {
+            "id": 10,
+            "link": "#",
+            "name": "MySQL",
+            "image": "images/sql.jpg"
+        },
+        {
+            "id": 11,
+            "link": "#",
+            "name": "PostgreSQL",
+            "image": "images/pgsql.jpg"
+        }
+    ]
+}

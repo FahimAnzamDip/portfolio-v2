@@ -16,7 +16,8 @@ let contactForm = reactive({
 
 <template>
   <!-- Contact -->
-  <section id="contact" class="relative py-28 lg:py-36">
+  <section id="contact" class="relative py-28 lg:py-36 overflow-hidden">
+    <div class="absolute top-44 -left-64 h-[250px] w-[900px] -rotate-25 rounded-3xl bg-gradient-to-r from-cyan-600 to-indigo-800 opacity-20 dark:opacity-20 blur-3xl filter block"></div>
     <div class="container px-3 mx-auto max-w-6xl 2xl:max-w-7xl">
       <SectionHeading>Get In Touch</SectionHeading>
 
@@ -102,7 +103,7 @@ let contactForm = reactive({
               <TextArea v-model="contactForm.message" id="message" class="h-40" name="name" required placeholder="Enter your message"/>
             </div>
             <div class="col-span-2 flex">
-              <NButton type="submit" btn-type="filled" class="px-5 py-3 text-md">
+              <NButton :loading="false" type="submit" btn-type="filled" class="px-5 py-3 text-md">
                 <span class="mr-1">Send Message</span>
                 <template #icon>
                   <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 h-5" viewBox="0 0 16 16">

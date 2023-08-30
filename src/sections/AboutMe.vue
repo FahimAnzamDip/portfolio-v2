@@ -5,6 +5,7 @@
   import SectionHeading from "@/components/SectionHeading.vue";
   import Experience from "@/components/Experience.vue";
   import Education from "@/components/Education.vue";
+  import { skills } from "@/data/skills.json";
 
   let currentTab = ref(1)
 </script>
@@ -18,8 +19,8 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
         <div class="md:col-span-5 flex justify-center items-start">
           <div class="relative">
-            <img class="w-full rounded-lg md:w-[400px] border-8 dark:border-white h-auto" src="/images/fahim.png" alt="Fahim Anzam Dip">
-            <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block"></div>
+            <img class="w-full rounded-lg md:w-[400px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/images/fahim.png" alt="Fahim Anzam Dip">
+            <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block  shadow-md"></div>
           </div>
         </div>
 
@@ -83,17 +84,7 @@
               </div>
               <div v-else-if="currentTab === 2" class="dark:text-slate-200">
                 <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                  <Skill link="#" name="Bootstrap" image="images/bootstrap.jpg"/>
-                  <Skill link="#" name="Tailwind CSS" image="images/tailwind.jpg"/>
-                  <Skill link="#" name="Php" image="images/php.jpg"/>
-                  <Skill link="#" name="Laravel" image="images/laravel.jpg"/>
-                  <Skill link="#" name="Javascript" image="images/javascript.jpg"/>
-                  <Skill link="#" name="Vue.js" image="images/vue.jpg"/>
-                  <Skill link="#" name="Alpine.js" image="images/alpine.jpg"/>
-                  <Skill link="#" name="Livewire" image="images/livewire.jpg"/>
-                  <Skill link="#" name="Github" image="images/github.jpg"/>
-                  <Skill link="#" name="MySQL" image="images/sql.jpg"/>
-                  <Skill link="#" name="PostgreSQL" image="images/pgsql.jpg"/>
+                  <Skill v-for="skill in skills" :key="skill.id" :link="skill.link" :name="skill.name" :image="skill.image"/>
                 </div>
               </div>
               <div v-else-if="currentTab === 3" class="dark:text-slate-200 tracking-wide">

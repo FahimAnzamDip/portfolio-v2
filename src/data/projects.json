@@ -1,0 +1,57 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "image": "images/project_1.jpg",
+            "category": "Open Source",
+            "title": "Triangle POS & Inventory",
+            "tags": ["Bootstrap", "Laravel", "Livewire"],
+            "code_link": "https://github.com/FahimAnzamDip/triangle-pos",
+            "description": "<p>Triangle POS is an open source Inventory Management with POS System. Developed with Laravel 10, Bootstrap 4 & Livewire 2.0.</p>"
+        },
+        {
+            "id": 2,
+            "image": "images/project_2.jpg",
+            "category": "Client Project",
+            "title": "Kutub Shop",
+            "tags": ["Tailwind CSS", "Alpine.js", "Laravel", "Livewire"],
+            "live_link": "https://kutubshop.com",
+            "description": "<p><a href=\"https://www.facebook.com/kutubshopbd\" target=\"_blank\">Kutub Shop</a> is an ecommerce website focused on selling books. I worked on both frontend and backend in this project for one of my client (<a href=\"https://triangletech.com.bd\" target=\"_blank\">Triangle Technologies Ltd.</a>) and it was built with TALL stack in the frontend and backend in Laravel 8.</p>"
+        },
+        {
+            "id": 3,
+            "image": "images/project_3.jpg",
+            "category": "Client Project",
+            "title": "Canbe BD",
+            "tags": ["Bootstrap", "Laravel", "Livewire"],
+            "live_link": "http://canbebd.com",
+            "description": "<p>It's a company profile with ecommerce website for a well known medical instrument distributor in Bangladesh. It was one my project based work for a client built with Laravel 8, Bootstrap & Livewire.</p>"
+        },
+        {
+            "id": 4,
+            "image": "images/project_4.jpg",
+            "category": "Job/Office Project",
+            "title": "Jamia Kashiful Uloom",
+            "tags": ["Bootstrap", "Laravel", "Jquery", "Ajax", "Livewire"],
+            "live_link": "https://kashifululoombd.com",
+            "description": "<p>It's a madrasa management system (student management, hostel management, admission management, employee management etc) with frontend cms for a well known <a href=\"https://www.facebook.com/syedanuwarabullah\" target=\"_blank\">madrasa</a> in Bangladesh. I worked actively in this project for both frontend and backend in my job at Haste IT.</p>"
+        },
+        {
+            "id": 5,
+            "image": "images/project_5.jpg",
+            "category": "Job/Office Project",
+            "title": "Almodina Battery House",
+            "tags": ["Bootstrap", "Laravel", "Livewire", "Jquery"],
+            "description": "<p>It's a work flow management software (sales, purchase, raw material stock, vehicle stock, customer/supplier management, employee management, basic accounting etc) for a auto manufacturing company in Bangladesh. I worked heavily in this project in my job at Haste IT. I was also involved in user requirement analysis and training on how to use the software.</p>"
+        },
+        {
+            "id": 6,
+            "image": "images/project_6.jpg",
+            "category": "Client Project",
+            "title": "Ihyaussunnah Foundation",
+            "tags": ["Bootstrap", "Jquery", "Laravel", "Livewire"],
+            "live_link": "https://ihyaussunnah.com",
+            "description": "<p>It's a website for welfare foundation in Bangladesh called <a href=\"https://www.facebook.com/ihyaussunnahbd\" target=\"_blank\">Ihyaussunnah Foundation</a>. It also has a separate ecommerce module for selling books. The project was from my my client (<a href=\"https://triangletech.com.bd\" target=\"_blank\">Triangle Technologies Ltd.</a>) and the backend is built with Laravel 10.</p>"
+        }
+    ]
+}
