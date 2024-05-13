@@ -7,7 +7,7 @@ import InputLabel from "@/components/InputLabel.vue";
 import TextArea from "@/components/TextArea.vue";
 import Toast from "@/components/Toast.vue";
 
-const api = "https://fahim.canbebd.com/api/v1/messages";
+const api = "https://fahim.hasteit.com/api/v1/messages";
 
 let contactForm = reactive({
     name: "",
