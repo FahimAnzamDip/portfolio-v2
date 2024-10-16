@@ -19,8 +19,8 @@ let currentTab = ref(1);
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div class="md:col-span-5 flex justify-center items-start">
                     <div class="relative">
-                        <img class="w-full rounded-lg md:w-[400px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/images/fahim.png" alt="Fahim Anzam Dip" />
-                        <div class="absolute w-full md:w-[400px] h-[400px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block shadow-md"></div>
+                        <img class="w-full rounded-e-lg rounded-b-lg md:w-[400px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/images/fahim.jpg" alt="Fahim Anzam Dip" />
+                        <div class="absolute w-full md:w-[400px] h-[458px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block shadow-md"></div>
                     </div>
                 </div>
 
