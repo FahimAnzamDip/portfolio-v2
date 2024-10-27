@@ -85,7 +85,7 @@ let submitContactForm = () => {
     <transition name="fade" mode="in-out">
         <Toast v-if="showToast" :message="'Thank You, for your message! Will get back to you shortly.'" @close="handleClose"/>
     </transition>
-    
+
     <!-- Contact -->
     <section id="contact" class="relative py-28 lg:py-36 overflow-hidden">
         <div class="absolute top-44 -left-64 h-[250px] w-[900px] -rotate-25 rounded-3xl bg-gradient-to-r from-cyan-600 to-indigo-800 opacity-20 dark:opacity-20 blur-3xl filter block"></div>

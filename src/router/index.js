@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/layouts/Main.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
     scrollBehavior(to, from, savedPosition) {

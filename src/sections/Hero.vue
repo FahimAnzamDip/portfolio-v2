@@ -8,7 +8,7 @@ let typed;
 
 onMounted(() => {
     typed = new Typed(typedElement.value, {
-        strings: ["Full Stack Web Developer", "Crafting Digital Experiences"],
+        strings: ["Web Developer", "Crafting Digital Experiences"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 5000,
