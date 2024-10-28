@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from "vue";
-import Skill from "@/components/Skill.vue";
 import AboutTab from "@/components/AboutTab.vue";
-import SectionHeading from "@/components/SectionHeading.vue";
-import Experience from "@/components/Experience.vue";
 import Education from "@/components/Education.vue";
+import Experience from "@/components/Experience.vue";
+import SectionHeading from "@/components/SectionHeading.vue";
+import Skill from "@/components/Skill.vue";
 import { skills } from "@/data/skills.json";
+import { ref } from "vue";
 
 let currentTab = ref(1);
 </script>
@@ -75,7 +75,7 @@ let currentTab = ref(1);
                             <div v-if="currentTab === 1" class="dark:text-slate-200 tracking-wide">
                                 <div class="prose dark:prose-invert prose-teal tracking-wide mb-7 text-left md:text-justify">
                                     <p>Hi, This is <strong>Fahim Anzam Dip</strong></p>
-                                    <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. For the past <strong>two & a half years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
+                                    <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong> in general. I am a Full Stack Web Developer with strong focus on Backend Development. Over the past <strong>three years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
                                     <p>I am always open to learning new technologies and build new things that will shape the business of my clients.</p>
                                 </div>
 
