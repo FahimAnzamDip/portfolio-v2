@@ -1,14 +1,14 @@
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
-import Typed from "typed.js";
 import LinkButton from "@/components/LinkButton.vue";
+import Typed from "typed.js";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 
 const typedElement = ref(null);
 let typed;
 
 onMounted(() => {
     typed = new Typed(typedElement.value, {
-        strings: ["Web Developer", "Crafting Digital Experiences"],
+        strings: ["Crafting Digital Experiences", "Web Developer"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 5000,

@@ -19,8 +19,7 @@ let currentTab = ref(1);
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div class="md:col-span-5 flex justify-center items-start">
                     <div class="relative">
-                        <img class="w-full rounded-e-lg rounded-b-lg md:w-[400px] border-8 border-slate-300 dark:border-white h-auto shadow-md" src="/images/fahim.jpg" alt="Fahim Anzam Dip" />
-                        <div class="absolute w-full md:w-[400px] h-[458px] bg-primary-400 border-8 border-slate-300 dark:border-white rounded-lg -z-10 bottom-5 right-6 hidden lg:block shadow-md"></div>
+                        <img class="w-full rounded-e-lg rounded-b-lg h-auto" src="/images/about_svg.svg" alt="Fahim Anzam Dip" />
                     </div>
                 </div>
 
@@ -75,11 +74,11 @@ let currentTab = ref(1);
                             <div v-if="currentTab === 1" class="dark:text-slate-200 tracking-wide">
                                 <div class="prose dark:prose-invert prose-teal tracking-wide mb-7 text-left md:text-justify">
                                     <p>Hi, This is <strong>Fahim Anzam Dip</strong></p>
-                                    <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong>. As a web developer, over the past <strong>three years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Web Developer.</p>
+                                    <p>Highly passionate about <strong>Software Development</strong> & <strong>Programming</strong>. As a web developer, over the past <strong>three years</strong> I have worked with multiple clients in various project based work. Currently working with <a target="_blank" href="https://hasteit.com">Haste IT</a> as a Full Stack Web Developer.</p>
                                     <p>I am always open to learning new technologies and build new things that will shape the business of my clients.</p>
                                 </div>
 
-                                <a href="https://drive.google.com/file/d/1jwDufcvVwwc_uM-mVdxMzVl27mZP79ch/view?usp=sharing" target="_blank" class="text-primary-500 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium flex items-center justify-start w-fit transition-all duration-300">
+                                <a href="#" target="_blank" class="text-primary-500 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium flex items-center justify-start w-fit transition-all duration-300">
                                     <span class="mr-2">My Resume</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
@@ -92,7 +91,7 @@ let currentTab = ref(1);
                                 </div>
                             </div>
                             <div v-else-if="currentTab === 3" class="dark:text-slate-200 tracking-wide">
-                                <Experience designation="Web Developer" company="Haste IT" timeline="February 2022 - Present">
+                                <Experience designation="Web Developer" company="Haste IT" timeline="May 2023 - Present">
                                     <template #description>
                                         <ul>
                                             <li>Develop web applications using Laravel, Go & Vue.js</li>

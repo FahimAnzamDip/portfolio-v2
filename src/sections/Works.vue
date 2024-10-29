@@ -1,10 +1,10 @@
 <script setup>
-import SectionHeading from "@/components/SectionHeading.vue";
-import Project from "@/components/Project.vue";
 import NButton from "@/components/NButton.vue";
-import { ref } from "vue";
-import HireMe from "@/sections/HireMe.vue";
+import Project from "@/components/Project.vue";
+import SectionHeading from "@/components/SectionHeading.vue";
 import { projects } from "@/data/projects.json";
+import HireMe from "@/sections/HireMe.vue";
+import { ref } from "vue";
 
 let showAllWork = ref(false);
 </script>
